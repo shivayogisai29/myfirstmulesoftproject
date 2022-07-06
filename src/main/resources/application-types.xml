@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="distinctbyfile" format="xml">
+      <types:example format="xml" element="book" location="examples/distinctbyoperator.xml"/>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#582fa318-597e-4e37-b151-30367c7bbe1f">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="distinctbyfile"/>
+        </types:message>
+      </types:input-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>
